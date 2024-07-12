@@ -21,6 +21,9 @@ public class ObjectsCasting {
     //tariro.mwana();//Invalid because mwana is not a method in MaiMickey
     //DownCasting so that you can print mwana
     ((Mickey)tariro).mwana();
+    //you can also create an instance of Dog
+    Mickey wangu = (Mickey) tariro;
+    wangu.mwana();
     System.out.println("Mickey mwana waMaiMickey");
     }
 }
