@@ -11,5 +11,17 @@ public class ArrayLists {
         System.out.println(names.get(1));//getting the index of an array
         System.out.println(names.size());//getting the size of an arraylist
         System.out.println(names);
+        int [][] numbers = {
+            {20, 22, 23},
+            {24, 25, 26},
+            {27, 28, 29},
+        };
+        for (int i = 0; i < 3; i++){
+            System.out.println(numbers[i][i]);
+            System.out.println(numbers[2][2]);
+            for(int j = 0; j < 3; j++){
+            System.out.println(numbers[i][j]);
+            }
+        }
     }
 }
