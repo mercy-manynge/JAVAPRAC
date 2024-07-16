@@ -26,7 +26,7 @@ public class Test {
         if (++a <= 10 && --b < 20) {}
           System.out.println("Output of && operator: "
                            + "a = " + a + " b = " + b);
-        System.out.println("-------------");
+        System.out.println("YARAMBA");
  
         a = 10;
         b = 20;
