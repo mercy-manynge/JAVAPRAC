@@ -58,7 +58,41 @@ public class Test {
     int i1 = 123456;
     int i2 = 123_456;
     System.out.println(i1 == i2);
+    System.out.println("-----------------");
+    
+    int c = 5, j = 0;
+    for (int i = 0; i < 3;)
+    INNER: do{ //Do-While loop
+        i++; c++;
+        if(c>10)break INNER;
+        c+= 4;
+        j++;
+    } while (j<=2);
+    System.out.println(c);
+    System.out.println("XXX XXX XXX");
+    
+    Shape rectangle = new Rectangle(5);  // A
+    System.out.println(","+rectangle.hasEdges()); // B
     }
     
 
 }
+class Shape { 
+    public Shape() { 
+      System.out.print("Shape"); 
+    } 
+    public Shape(int edge) { 
+      System.out.print("ShapeEdge"); 
+    } 
+     boolean hasEdges() { 
+      return false; 
+    } 
+} 
+class Rectangle extends Shape { 
+ public Rectangle(int age) { 
+   System.out.print("Rectangle"); 
+ } 
+ public boolean hasEdges() { // C
+   return true; 
+ } 
+} 
