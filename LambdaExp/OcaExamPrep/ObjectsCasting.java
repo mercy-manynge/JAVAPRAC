@@ -4,7 +4,7 @@ public class ObjectsCasting {
     class MaiMickey{
         public void mai(){
             System.out.println("Mai vaMickey");
-        }
+       }
     }
     class Mickey extends MaiMickey{
         public void mwana() {
