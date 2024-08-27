@@ -7,8 +7,8 @@ public class StringDemo {
     //   String  b = "Manyange";
     //     System.out.println(s + b);
     //     System.out.println(s);
-
-        String s = "purr";
+//
+        String s = "purr";//If you want to change this same string s you need to reassign it like on line 12
  s+=s.toUpperCase();
  s+=s.trim();
 s+=s.substring(1, 3);
