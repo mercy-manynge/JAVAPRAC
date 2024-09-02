@@ -16,6 +16,12 @@ public class PassingData {
         StringBuilder builder = new StringBuilder("Mickey");
         changeStringBuilder(builder);
         System.out.println(builder);
+
+        PassingData now = new PassingData();
+        now.callMethods();
+    }
+    void callMethods(){
+        fly(10);//Autoboxing happens here when int 10 is coverted to an integer automatically
     }
     static void change(int num){
         num = 10;
@@ -29,5 +35,8 @@ public class PassingData {
     }
     static void changeStringBuilder(StringBuilder builder){
         builder.append(" Mercy");
+    }
+    public void fly(Integer numFeet){
+        System.out.println("Integer numFeet is called");
     }
 }
