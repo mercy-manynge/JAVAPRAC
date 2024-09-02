@@ -11,7 +11,11 @@ public class PassingData {
         System.out.println(webby);
 
         webby = stringChangeReturn(webby);//reassigning it to the original variable
-        System.out.println(webby);// here returns bird because the variable on "return" is returning a new value which is    
+        System.out.println(webby);// here returns bird because the variable on "return" is returning a new value which is   
+        
+        StringBuilder builder = new StringBuilder("Mickey");
+        changeStringBuilder(builder);
+        System.out.println(builder);
     }
     static void change(int num){
         num = 10;
@@ -22,5 +26,8 @@ public class PassingData {
     static String stringChangeReturn(String webby){//assigning the parameter webby
         webby = "bird";//changing it to bird 
         return webby;//return bird
+    }
+    static void changeStringBuilder(StringBuilder builder){
+        builder.append(" Mercy");
     }
 }
