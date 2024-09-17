@@ -11,17 +11,28 @@ class Cat extends Animal{
         System.out.println("Meow Meow");
     }
 }
+class Cellphone {
+    public String phone(String phone){
+        return"Tecno";
+    }
+}
 
 class Dog extends Animal{
     public void makeSound(){
         System.out.println("Woof Woof");
     }
 }
+class Huawei extends Cellphone{
+    public String phone(String phone){
+        return "Iphone";
+    }
+}
 class Print{
     public static void main(String[] args) {
+        Cellphone c = new Huawei();//Accessing the method using the object of a super
         Animal a = new Dog();
         Animal b = new Cat();
-
+        System.out.println(c.phone(""));
         a.makeSound();
         b.makeSound();
     }
