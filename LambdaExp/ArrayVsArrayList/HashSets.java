@@ -2,7 +2,7 @@ package ArrayVsArrayList;
 import java.util.HashSet;
 import java.util.Set;
 
-public class Hash {
+public class HashSets {
     public static void main(String[] args) {
         Set<String> names = new HashSet<>(); //Removes the duplicate names
         names.add("Thabiso");
