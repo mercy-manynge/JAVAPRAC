@@ -21,5 +21,6 @@ class Main{
         ifelse.setSalary(2000);
         System.out.println("Salary is : " + ifelse.getSalary());//If you ommit this SOUT statement the code will print nothing
         //if you ommit the + for concatination the code will return an exception
+        ifelse.setSalary(-2000);
     }
 }
