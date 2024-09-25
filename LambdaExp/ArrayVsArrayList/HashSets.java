@@ -10,6 +10,9 @@ public class HashSets {
         names.add("Jane");
         names.add("Mike");
         names.add("John");
+        
+        boolean hasMike = names.contains("Mike");
+        System.out.println(hasMike);
         System.out.println(names);//John is printed only once because it is a duplicate
     }
 }
