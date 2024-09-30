@@ -9,5 +9,11 @@ public class WhileLoops {
             1<10 one is less that 10 its true so the loop continues until the condition is false then breaks out */
         }
         System.out.println("Finished Loop");//this is now printed
+
+        while(a < 10){// Curly braces are required because there are two statements after the loop 
+            System.out.println("a is " + a);// First iteration a is 10 so nothing is ging to be printed since the condition is false already, 10< 10 is false
+            a++;
+        }
+        System.out.println("Finished second while loop");//this is only printed
     }
 }
