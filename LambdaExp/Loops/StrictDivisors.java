@@ -15,11 +15,13 @@ public class StrictDivisors {
         for (int i = 1; i <= n / 2; i++) {
             // Check if i is a divisor of n
             if (n % i == 0) {
-                sum += i;  // Add the divisor to the sum
+                // sum += i;  // Add the divisor to the sum
+                System.out.print(i + " ");// Now print the divisors only
             }
         }
 
         // Output the sum of strict divisors
-        System.out.println("Sum of strict divisors: " + sum);
+        // System.out.println("Sum of strict divisors: " + sum);
+        
     }
 }
