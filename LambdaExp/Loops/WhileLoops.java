@@ -1,5 +1,5 @@
 package Loops;
-
+import java.util.Scanner;
 public class WhileLoops {
     public static void main(String [] args){
         int a = 0;
@@ -15,5 +15,25 @@ public class WhileLoops {
             a++;
         }
         System.out.println("Finished second while loop");//this is only printed
+
+        /* Write a program which reads a sequence of integers 
+        from the user and stops by displaying "Done" 
+        when the sum of these values exceeds 100 */
+        Scanner scanner = new Scanner(System.in);
+        int sum = 0;
+        while(true){//infinite loop
+            System.out.println("Enter a number: ");// Tell the user to enter a number
+            sum += scanner.nextInt();//Read the number from the user and add it to the variable sum
+            if(sum > 100)// Check if sum is greater than 100
+            break;//Break out of the loop when the when the sum is greater than 100
+        }
+        System.out.println("Done" + sum);// Print done and entered sum
+
+        //You can also use a do/while loop
+        do {
+            System.out.println("Enter a number: ");
+            sum += scanner.nextInt();
+        } while (sum <= 100);
+        System.out.println("Done "+ sum);
     }
 }
